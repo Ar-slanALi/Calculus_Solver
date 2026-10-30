@@ -158,9 +158,9 @@ st.markdown("""
     /* Centered, Balanced Hero Header */
     .brand-hero-centered {
         text-align: center;
-        padding: 4px 16px 18px 16px;
-        margin-bottom: 22px;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+        padding: 6px 16px 16px 16px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.16);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -185,7 +185,8 @@ st.markdown("""
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
     }
     .brand-title {
-        font-size: 2.3rem;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 2.35rem;
         font-weight: 900;
         letter-spacing: -0.035em;
         color: var(--text-color, currentColor) !important;
@@ -196,49 +197,26 @@ st.markdown("""
     }
     .brand-edition-badge {
         font-family: 'JetBrains Mono', monospace;
-        font-size: 0.70rem;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        padding: 3px 8px;
-        border-radius: 4px;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        padding: 3px 9px;
+        border-radius: 5px;
         background: rgba(128, 128, 128, 0.12);
         color: var(--text-color, currentColor) !important;
-        border: 1px solid rgba(128, 128, 128, 0.3);
+        border: 1.2px solid rgba(128, 128, 128, 0.3);
         text-transform: uppercase;
         vertical-align: middle;
     }
     .brand-sub {
-        font-size: 0.90rem;
+        font-size: 0.92rem;
         color: var(--text-color, currentColor) !important;
-        opacity: 0.75;
-        margin-top: 5px;
+        opacity: 0.78;
+        margin-top: 6px;
         font-weight: 500;
-        max-width: 700px;
+        letter-spacing: 0.01em;
+        max-width: 720px;
         line-height: 1.35;
-    }
-    .brand-specs-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 12px;
-    }
-    .spec-pill {
-        font-size: 0.72rem;
-        font-weight: 600;
-        color: var(--text-color, currentColor);
-        opacity: 0.75;
-        background: rgba(128, 128, 128, 0.08);
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        padding: 3px 11px;
-        border-radius: 20px;
-        letter-spacing: 0.02em;
-    }
-    .spec-dot {
-        color: #10B981;
-        font-size: 0.8rem;
-        opacity: 0.6;
     }
 
     /* Sidebar Headings */
@@ -521,15 +499,6 @@ st.markdown("""
     </div>
     <div class="brand-sub">
         Universal Symbolic Derivative Engine & Spatial Curvature Visualizer
-    </div>
-    <div class="brand-specs-row">
-        <span class="spec-pill">Exact Symbolic Partials</span>
-        <span class="spec-dot">•</span>
-        <span class="spec-pill">Hessian Curvature Tensor</span>
-        <span class="spec-dot">•</span>
-        <span class="spec-pill">Critical Extrema & Saddles</span>
-        <span class="spec-dot">•</span>
-        <span class="spec-pill">Interactive 4D Spatial Slicing</span>
     </div>
 </div>
 """, unsafe_allow_html=True)
