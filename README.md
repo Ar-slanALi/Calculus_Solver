@@ -1,9 +1,10 @@
 # DerivX 4D — Universal Symbolic Derivative Engine & Spatial Curvature Visualizer
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.40%2B-FF4B4B.svg)](https://streamlit.io/)
-[![SymPy](https://img.shields.io/badge/SymPy-1.13%2B-darkgreen.svg)](https://www.sympy.org/)
-[![Plotly](https://img.shields.io/badge/Plotly-5.24%2B-brightgreen.svg)](https://plotly.com/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.40%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![SymPy](https://img.shields.io/badge/SymPy-1.13%2B-3B5526?style=for-the-badge&logo=python&logoColor=white)](https://www.sympy.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-5.24%2B-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 **DerivX 4D** is an advanced, high-performance symbolic computer algebra system (CAS) and spatial manifold visualizer designed for single-variable and multivariable calculus (up to 4 dimensions: $x, y, z, w$). 
 
@@ -11,7 +12,75 @@ Engineered with academic rigor and an executive telemetry interface, DerivX 4D c
 
 ---
 
-## Key Features & Modules
+## 📑 Table of Contents
+1. [System Architecture](#-system-architecture)
+2. [Key Features & Modules](#-key-features--modules)
+   - [Symbolic Multivariable Differentiation Engine](#1-symbolic-multivariable-differentiation-engine)
+   - [Advanced Multivariable Analysis Suite](#2-advanced-multivariable-analysis-suite)
+   - [Spatial Manifold Visualizer](#3-spatial-manifold-visualizer-plotly-engine)
+   - [Natural Language Assistant & Workspace](#4-natural-language-assistant--mathematical-workspace)
+3. [Repository Structure](#-repository-structure)
+4. [Quickstart & Installation](#-quickstart--installation)
+5. [Mathematical Syntax Reference](#-mathematical-syntax-reference)
+6. [Automated Verification Suite](#-automated-verification-suite)
+7. [Tech Stack](#-tech-stack)
+8. [License](#-license)
+
+---
+
+## 🏗️ System Architecture
+
+```text
+  ┌─────────────────────────────────────────────────────────────┐
+  │                 User Input & Interaction                    │
+  │   - Text Formulation Box     - 6-Category Math Palette      │
+  │   - Natural Language Prompt  - Preset Mathematical Models   │
+  └──────────────────────────────┬──────────────────────────────┘
+                                 │
+                                 ▼
+  ┌─────────────────────────────────────────────────────────────┐
+  │         Mathematical Preprocessing & Parser (AST)           │
+  │   - Implicit Multiplication Resolution (e.g. 4x^3 -> 4*x^3) │
+  │   - Unicode / Typography Normalization (–, —, ×, ÷)         │
+  │   - Safe Symbol Extraction (x, y, z, w)                     │
+  └──────────────────────────────┬──────────────────────────────┘
+                                 │
+                                 ▼
+  ┌─────────────────────────────────────────────────────────────┐
+  │             Core Calculus Engine (SymPy CAS)                │
+  │  ├── First-Order Partial Derivatives & Step-by-Step Proofs  │
+  │  ├── Gradient Vector Field (∇f) & Steepest Ascent           │
+  │  ├── Second-Order Hessian Matrix (H) & Clairaut Symmetry    │
+  │  ├── Stationary Critical Points & Extrema Classification    │
+  │  ├── 1st & 2nd Order Multivariable Taylor Polynomials       │
+  │  ├── Scalar Laplacian (∇²f), Divergence & Curl Operators     │
+  │  └── Constrained Optimization (Lagrange Multipliers)        │
+  └──────────────────────────────┬──────────────────────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 ▼                               ▼
+  ┌─────────────────────────────┐ ┌─────────────────────────────┐
+  │ Spatial Manifold Visualizer │ │     Export & Code Suite     │
+  │ - 1D Curve & Tangent Line   │ │ - Publication LaTeX (.tex)  │
+  │ - 2D Surface 3D Mesh        │ │ - Vectorized NumPy (.py)    │
+  │ - 2D Contour Map (Heatmap)  │ └─────────────────────────────┘
+  │ - 3D Critical Point Markers │
+  │ - 4D Dynamic Axis Slicing   │
+  └──────────────┬──────────────┘
+                 │
+                 ▼
+  ┌─────────────────────────────────────────────────────────────┐
+  │                 Streamlit Reactive Frontend                 │
+  │  - Non-Collapsing Layout Architecture                       │
+  │  - High-Contrast Telemetry Badges & Status Indicators       │
+  │  - Real-Time KaTeX Mathematical Formatting                  │
+  │  - Dual-Theme Adaptive CSS (Dark Slate & Crisp Light Mode)  │
+  └─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ⚡ Key Features & Modules
 
 ### 1. Symbolic Multivariable Differentiation Engine
 - **Universal Variable Support:** Automatically parses and differentiates functions across 1 to 4 independent variables ($x, y, z, w$).
@@ -80,8 +149,10 @@ Calculus_Solver/
 ├── test_engine.py         # Unit test suite for symbolic engine & edge cases
 ├── requirements.txt       # Project dependencies & versions
 ├── run_app.bat            # 1-Click Windows launch script
+├── .gitattributes         # Git line ending normalization
 ├── .gitignore             # Git exclusion rules (venv, cache, logs)
-└── README.md              # Project manual & documentation
+├── LICENSE                # MIT Open Source License
+└── README.md              # Comprehensive manual & technical documentation
 ```
 
 ---
@@ -89,16 +160,16 @@ Calculus_Solver/
 ## 🚀 Quickstart & Installation
 
 ### Prerequisites
-- Python 3.10 or higher
-- Git (optional, for cloning)
+- **Python 3.10 or higher** installed.
+- **Git** installed on your system.
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/ArsLanALi64/Calculus_Solver.git
+git clone https://github.com/Ar-slanALi/Calculus_Solver.git
 cd Calculus_Solver
 ```
 
-### Step 2: Set Up Virtual Environment (Recommended)
+### Step 2: Set Up a Virtual Environment (Recommended)
 ```bash
 # Windows
 python -m venv venv
@@ -115,8 +186,8 @@ pip install -r requirements.txt
 ```
 
 ### Step 4: Run the Application
-**Option A (Windows 1-Click):**
-Double click `run_app.bat`.
+**Option A (Windows 1-Click Launcher):**
+Simply double-click `run_app.bat`.
 
 **Option B (Command Line):**
 ```bash
@@ -126,28 +197,28 @@ The application will launch in your default web browser at `http://localhost:850
 
 ---
 
-## 🧪 Running Automated Unit Tests
-To verify all symbolic routines, Taylor expansions, critical point solvers, and Plotly visualization pipelines:
-```bash
-python test_engine.py
-```
-
----
-
 ## 📐 Mathematical Syntax Reference
 
-| Operation | Mathematical Form | Input Syntax | Example |
+| Operation | Mathematical Form | Input Syntax | Working Example |
 | :--- | :--- | :--- | :--- |
 | **Multiplication** | $4 x^3 y^2$ | Explicit `*` operator | `4*x^3*y^2` |
-| **Division** | $\frac{x+y}{x-y}$ | Enclosed in parentheses | `(x + y) / (x - y)` |
-| **Powers** | $x^2, y^4$ | Caret `^` or `**` | `x^2 - y^4` |
-| **Exponential** | $e^{2x}, e^z y^4$ | `exp(...)` or `e^(...)` | `exp(2*x)` or `e^z * y^4` |
-| **Logarithm** | $\ln(x^2 + 1)$ | `ln(...)` or `log(...)` | `ln(x^2 + 1)` |
+| **Rational Division** | $\frac{x+y}{x-y}$ | Denominator in `(...)` | `(x + y) / (x - y)` |
+| **Powers & Exponents** | $x^2, y^4$ | Caret `^` or `**` | `x^2 - y^4` |
+| **Natural Exponential** | $e^{2x}, e^z y^4$ | `exp(...)` or `e^(...)` | `exp(2*x)` or `e^z * y^4` |
+| **Natural Logarithm** | $\ln(x^2 + 1)$ | `ln(...)` or `log(...)` | `ln(x^2 + 1)` |
 | **Trigonometry** | $\sin(x) \cos(y)$ | `sin(...) * cos(...)` | `sin(x) * cos(y)` |
 | **Square Root** | $\sqrt{x^2 + y^2}$ | `sqrt(...)` | `sqrt(x^2 + y^2)` |
 | **Absolute Value** | $\|x - y\|$ | `abs(...)` | `abs(x - y)` |
 | **Hyperbolic** | $\sinh(x) + \cosh(y)$ | `sinh(...) + cosh(...)` | `sinh(x) + cosh(y)` |
 | **Constants** | $\pi, e$ | `pi`, `e` | `pi * x^2 + e` |
+
+---
+
+## 🧪 Automated Verification Suite
+To verify all symbolic routines, Taylor expansions, critical point solvers, and Plotly visualization pipelines:
+```bash
+python test_engine.py
+```
 
 ---
 
@@ -162,4 +233,4 @@ python test_engine.py
 ---
 
 ## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
